@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build wuziqi", 
+            "command": "gcc", // 如果报错找不到gcc，这里请改为你电脑中gcc.exe的完整路径
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/main/*.c",
+                "${workspaceFolder}/draw/*.c",
+                "${workspaceFolder}/judge/*.c",
+                "${workspaceFolder}/AI/*.c",
+                "-I", "${workspaceFolder}/draw",
+                "-I", "${workspaceFolder}/judge",
+                "-I", "${workspaceFolder}/AI",
+                "-I", "${workspaceFolder}",
+                "-o", "${workspaceFolder}/wuziqi.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
