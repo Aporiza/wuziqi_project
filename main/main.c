@@ -22,7 +22,7 @@ int input_to_pos(char *input,Pos *p){
     }
 
     return 1; // 转换成功
-
+dasdas
 }
 
 int main() {
